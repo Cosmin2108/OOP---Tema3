@@ -34,6 +34,6 @@ Apartament& Apartament::operator=(Apartament &ob)
 
     useful_area=ob.useful_area;
     etaj=ob.etaj;
-    (*this).Locuinta::operator=(ob); /// apeleaza operatorul '=' pentru partea de obiect de tip locuinta
+    (*this).Locuinta::operator=(ob); /// apeleaza explicit (cu ajutorul oper de rezolutie ::) operatorul '=' pentru partea de obiect de tip Locuinta
     return *this;
 }
